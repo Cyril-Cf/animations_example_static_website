@@ -1,0 +1,48 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.main_container .bandeau {
+    width: calc(100% / 4);
+    height: 100vh;
+    transition: all 1.5s ease;
+    z-index: 0;
+}
+
+.main_container .bandeau:nth-child(even) {
+    background-color: black;
+}
+
+.main_container .bandeau:nth-child(odd) {
+    background-color: rgb(0, 0, 0);
+}
+
+.main_container .h1 {
+    transition: all 1.5s ease;
+    display: none;
+    z-index: -2;
+    font-size: 50px;
+    margin-top: 15vh;
+
+}
+
+.bande_cachante {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44svh;
+    transition: all 0.5s ease;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+}
+
+.img_droite {
+    z-index: -4;
+    margin-top: -300px;
+    transform: translateX(100%);
+    transition: all 1.5s;
+}
